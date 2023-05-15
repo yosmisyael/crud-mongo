@@ -1,0 +1,42 @@
+<form method="post" action="/?_method=PUT">
+  <div class="mb-3">
+    <input type="hidden" name="_id" value="<%= data.id %>" />
+    <label for="name" class="form-label">Name</label>
+    <input
+      value="<%= data.oldName %>"
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="name"
+    />
+    <label for="email" class="form-label">Email</label>
+    <input
+      value="<%= data.oldEmail %>"
+      type="email"
+      class="form-control"
+      id="email"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="email"
+    />
+    <label for="phone" class="form-label">Phone Number</label>
+    <input
+      value="<%= data.oldPhoneNum %>"
+      type="text"
+      class="form-control"
+      id="phone"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="phoneNum"
+    />
+  </div>
+  <div class="mb-3 form-check">
+    <input <% if (data.oldIsFav === true) {%> checked <%} %> name="isFav"
+    type="checkbox" class="form-check-input" id="tag1" />
+    <label class="form-check-label" for="tag1">Favourite</label>
+  </div>
+  <a href="/"><button type="button" class="btn btn-danger">Cancel</button></a>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

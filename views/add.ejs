@@ -1,0 +1,40 @@
+<div class="alert alert-danger" role="alert">
+  <li></li>
+</div>
+
+<form method="post" action="/add">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="name"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="name"
+    />
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="email"
+    />
+    <label for="phone" class="form-label">Phone Number</label>
+    <input
+      type="text"
+      class="form-control"
+      id="phone"
+      aria-describedby="emailHelp"
+      class="mb-3"
+      name="phoneNum"
+    />
+  </div>
+  <div class="mb-3 form-check">
+    <input name="isFav" type="checkbox" class="form-check-input" id="tag1" />
+    <label class="form-check-label" for="tag1">Favourite</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
